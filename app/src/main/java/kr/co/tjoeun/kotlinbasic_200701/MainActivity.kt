@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                 35 -> { Toast.makeText(this, "나랑 동갑이다.", Toast.LENGTH_SHORT).show()  }
                 20 -> { Toast.makeText(this, "스무살이다.", Toast.LENGTH_SHORT).show()}
                 in 10..19 -> {Toast.makeText(this, "10대 입니다.", Toast.LENGTH_SHORT).show()}
-                29, 37 -> { Toast.makeText(this, "스무살이다.", Toast.LENGTH_SHORT).show() }
+                29, 37 -> { Toast.makeText(this, "29살 이거나 37살 입니다.", Toast.LENGTH_SHORT).show() }
                 else -> { Toast.makeText(this, "아무 해당 없는 나이", Toast.LENGTH_SHORT).show()}
 
             }
