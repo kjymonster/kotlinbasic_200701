@@ -25,15 +25,31 @@ class MainActivity : AppCompatActivity() {
             Log.e("메인화면", "에러 로그 찍어보기")
 
 
+        }
 
-            }
-
-            touchBtn2.setOnClickListener {
+        touchBtn2.setOnClickListener {
 
             Toast.makeText(this, "둘째 버튼 눌림", Toast.LENGTH_SHORT).show()
             Log.d("두번째버튼", "두번째 버튼 눌림")
+        }
 
+        //토스트 띄우기 버튼이 눌리면
+        showToastBtn.setOnClickListener {
 
+            //EditText에 입력된 내용을 받자. (=String으로 저장해 두자)
+            //코틀린에서는 val로 만든 변수의 대입값이 String이면 => 변수 타입도(대입값도) 자동으로 String으로 결정됨.
+         val inputContent = inputContentEdt.text.toString()
+
+            //10은 정수. 정수를 num1에 대입하면 num1은 자동으로 Int로 결정.
+            //코틀린에서는 int를 Int로 표시 ( 자바-int / 코틀린-Int)
+
+            // (예시) val num1 = 10
+
+//            val a = 10  //val: 대입값을 상수로 지정. 값변경 불가
+//            a = 9
+
+//            var b = 10  //var: 변수로 지정, 값변경 가능
+//            b = 9
         }
     }
 }

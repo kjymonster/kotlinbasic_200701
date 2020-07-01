@@ -22,5 +22,19 @@
         android:layout_marginTop="10dp"
         android:text="두번째 버튼" />
 
+    <EditText
+        android:id="@+id/inputContentEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="토스트로 띄울 문장 입력"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/showToastBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="입력한 문장을 토스트로 띄우기" />
+
 
 </LinearLayout>
