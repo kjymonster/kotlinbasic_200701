@@ -13,7 +13,12 @@ class MainActivity : AppCompatActivity() {
         touchBtn.setOnClickListener {
 
             //touchBtn이 눌리면 실행될 코드를 적는 { }
+
+            //Toast를 이용해 사용자에게 안내 메세지.
             Toast.makeText(this, "터치버튼을 눌렀습니다.", Toast.LENGTH_SHORT).show()
+
+            // (어디서 띄울지, 메시지, 길게 보여줄지/짧게 보여줄지) .show()->화면에 띄우기
+
         }
     }
 }
