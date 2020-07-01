@@ -1,5 +1,6 @@
 package kr.co.tjoeun.kotlinbasic_200701
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -55,6 +56,25 @@ class MainActivity : AppCompatActivity() {
 //            var b = 10  //var: 변수로 지정, 값변경 가능 (variable)
 //            b = 9
 
+        }
+
+        ageBtn.setOnClickListener {
+
+            //입력한 나이를 Int로 저장하자.
+            val inputage = ageEdt.text.toString().toInt() //일단 String으로 받고 .toInt()
+
+            //나이가 60이상이면 "어르신 입니다." 토스트 노출
+            if(inputage >= 60) {
+                Toast.makeText(this, "어르신 입니다.", Toast.LENGTH_SHORT).show()
+            }
+
+            //입력된 나이값에 따라 다른 처리 when
+            when (inputage) {
+                35 -> { Toast.makeText(this, "나랑 동갑이다.", Toast.LENGTH_SHORT).show()  }
+                20 -> { Toast.makeText(this, "스무살이다.", Toast.LENGTH_SHORT).show()}
+                else -> { Toast.makeText(this, "아무 해당 없는 나이", Toast.LENGTH_SHORT).show()}
+
+            }
         }
     }
 }
