@@ -14,5 +14,13 @@
         android:layout_height="wrap_content"
         android:text="Touch me!!" />
 
+<!--    두번째 버튼이 눌리면 "둘째 버튼 눌림" 토스트 / 로그 -->
+    <Button
+        android:id="@+id/touchBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="두번째 버튼" />
+
 
 </LinearLayout>

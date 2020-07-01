@@ -25,6 +25,15 @@ class MainActivity : AppCompatActivity() {
             Log.e("메인화면", "에러 로그 찍어보기")
 
 
+
+            }
+
+            touchBtn2.setOnClickListener {
+
+            Toast.makeText(this, "둘째 버튼 눌림", Toast.LENGTH_SHORT).show()
+            Log.d("두번째버튼", "두번째 버튼 눌림")
+
+
         }
     }
 }
