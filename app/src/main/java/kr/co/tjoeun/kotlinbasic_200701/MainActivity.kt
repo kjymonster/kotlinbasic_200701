@@ -40,16 +40,21 @@ class MainActivity : AppCompatActivity() {
             //코틀린에서는 val로 만든 변수의 대입값이 String이면 => 변수 타입도(대입값도) 자동으로 String으로 결정됨.
          val inputContent = inputContentEdt.text.toString()
 
+            //inputContent를 토스트로 출력
+            Toast.makeText(this, inputContent, Toast.LENGTH_LONG).show()
+
+
             //10은 정수. 정수를 num1에 대입하면 num1은 자동으로 Int로 결정.
             //코틀린에서는 int를 Int로 표시 ( 자바-int / 코틀린-Int)
 
             // (예시) val num1 = 10
 
-//            val a = 10  //val: 대입값을 상수로 지정. 값변경 불가
+//            val a = 10  //val: 대입값을 상수로 지정. 값변경 불가 (value)
 //            a = 9
 
-//            var b = 10  //var: 변수로 지정, 값변경 가능
+//            var b = 10  //var: 변수로 지정, 값변경 가능 (variable)
 //            b = 9
+
         }
     }
 }
